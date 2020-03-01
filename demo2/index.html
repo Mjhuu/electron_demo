@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <style>
+        .content{
+            width: 100%;
+            height: 400px;
+            background-color: orange;
+            overflow-y: auto;
+        }
+        .app{
+            width: 300px;
+            height: 300px;
+            background-color: saddlebrown;
+            display: flex;
+        }
+        .app>.left{
+            flex: 7;
+            height: 100%;
+            background-color: sandybrown;
+            text-align: center;
+        }
+        .app>.right{
+            flex: 3;
+            height: 100%;
+            margin-left: 10px;
+            background-color: seagreen;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="app">
+    <div class="left">
+        做
+    </div>
+    <div class="right">
+        右
+    </div>
+</div>
+<div class="content" id="content">
+
+</div>
+<script src="render/index.js"></script>
+</body>
+</html>
